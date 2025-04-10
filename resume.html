@@ -1,400 +1,350 @@
+
 <!DOCTYPE html>
 
 <html>
 
   <head>
     <title> Nida FATHIMA </title>
-<!-- left column & right column-->
-    <style>
-      @page {
-        size: A4;
-        /*margin: 20mm;*/
-      }
-      body {
-            width: 210mm;
-    min-height: 297mm;
-    margin: 0 auto;/*
-        height: 842px;
-        width: 595px;
-        margin-left: auto;
-        margin-right: auto;
-        */
-        /* delete later */ 
-        border: 1px solid red;
-      }
-      h1 {
-        font-size: 14px;
-      }
-      h2 {
-        font-size: 12px;
-      }
-      p, ul {
-        font-size: 12px;
-        /* font-family: Verdana,Geneva,sans-serif; */
-        font-family: Georgia, serif;
-        line-height: 1.5;
-      }
-      .container {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin: 0 auto;
-        /*background-color: lightgray;*/
-      }
-      .div1 {
-        width: 34%; /* % of the container width */
-        height: 90%; 
-        overflow: hidden;
-        background-color: #aaa;
-        margin: 0 auto; /* Centers the div horizontally */
-        padding: 15px;
-        /*border: 1px solid blue;*/
-      }
-      .div2 {
-        width: 66%; /* % of the container width */
-        height: 90%; 
-        overflow: hidden;
-        background-color: white;
-        margin: 0 auto; /* Centers the div horizontally */
-        padding: 15px;
-        /*border: 1px solid green;*/
-      }
-      .circle-container {
-        position: relative;
-        width: 130px; /* Circle width */
-        height: 130px; /* Circle height */
-        border-radius: 50%; /* Makes the container circular */
-        overflow: hidden; /* Ensures the image stays within the circle */
-        background-color: lightgray; /* Optional background for visualization */
-        margin: 0px auto; /* Centers the container */
-      }
-      .circle-image {
-        position: absolute;
-        top: -10px; /* Moves the image upwards */
-        left: 0;
-        width: 100%; /* Ensures the image fits the width of the container */
-        height: auto; /* Maintains aspect ratio */
-        object-fit: cover; /* Crops the image to fit the circle */
-      }
-      .icon-text {
-        display: inline-flex;
-        align-items: center;
-        gap: 20px; /* Space between icon and text */
-      }
-      .icon {
-        width: 20px;
-        height: 20px;
-        background-size: cover;
-        display: inline-block;
-      }
-      .icon-inline {
-        height: auto; 
-        vertical-align: middle;
-        width: 14px;
-        margin-right: 6px;
-      }
-    </style>
+    <!--link rel="stylesheet" type="text/css" href="styles.css"-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
   </head>
-
   <body>
-      
-    <!-----------------  CONTAINER FOR WHOLE PAGE --------------------------------------------->
-    <div class="container">
 
-      <!-----------------    LEFT SIDE COLUMN  ------------------------------------------------>
-      <div class="div1">
-        <!-- my photo (may be removed)-->
+
+  <div class = "paper">
+  <div class = "container">
+  
+    <div class = "left-container">
+
+
+      <!-- FIRST TILE IN THE LEFT COLUMN -->
+      <!-- PICTURE AND CONTACT DETAILS -->
+			<div class="tile">
+        <!-- PIC -->
         <div class="circle-container">
-          <img src="Nida.jpeg" alt="photo" style="position: relative; top: 1px; right : 10px">
+          <img src="Nida.jpeg" alt="photo" style="position: relative; top: 1px; right : 20px">
           </img>
         </div>
-        
-        <!-- my name (fixme:  github link)-->
-        <h1>
-          <a href="https://fathimanidaa.github.io/" style="text-align: center; display: block; margin: 0 auto; text-decoration: none;" target="_blank">Nida FATHIMA</a>
+        <h1 style="text-align:center"> 
+          <a href="https://fathimanidaa.github.io/" style="display: flex; align-items: center;justify-content: center; text-decoration: none; color:inherit" target="_blank">
+            Nida Fathima 
+          </a>
         </h1>
-
-        <!--div style="display: flex; flex-direction: column; gap: 0px;">
-  
-          <div style="display: flex; align-items: center; padding: 0; margin: 0;">
-            <img src="icons/location.png" style="width: 16px; height: 16px; margin-right: 5px;">
-            <p>Calicut, India</p>
-          </div>
-
-          <div style="display: flex; align-items: center; padding: 0; margin: 0;">
-            <img src="icons/call.png" style="width: 16px; height: 16px; margin-right: 5px;">
-            <p>+91 8943684426</p>
-          </div>
-
-          <div style="display: flex; align-items: center; padding: 0; margin: 0;">
-            <img src="icons/email.png" style="width: 16px; height: 16px; margin-right: 5px;">
-            <p>
-              <a href="mailto:nidafathima@students.iisertirupati.ac.in" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
-                <span>
-                  <span style="display: block;line-height:1.1;">nidafathima@students</span>
-                  <span style="display: block;line-height:1.1;">.iisertirupati.ac.in</span>
-                </span>
-              </a>
-            </p>
-          </div>
-
-        </div-->
-
-        <!-- contact me -->
-        <p style = "line-height:2;">
-          <span style = "display: block;">
-            <img src="icons/location.png" alt="home" class="icon-inline"> Calicut, India
-          </span>
-          <span style = "display: block;">
-            <img src="icons/call.png" alt="call" class="icon-inline"> +91 8943684426 
-          </span>
-          <span style = "display: block;">
-            <a href="mailto:nidafathima@students.iisertirupati.ac.in" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
-              <img src="icons/email.png" alt="email" class="icon-inline">
+        <!-- CONTACT INFO -->
+        <div class="tile-info" style="text-align:center">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <img src="./icons/location.png" alt="home" class="icon-inline"> Calicut, India
+        </div>
+        <div class="tile-info" style="text-align:center">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <img src="./icons/call.png" alt="call" class="icon-inline"> +91 8943684426 
+        </div>
+        <div class="tile-info" style="text-align:center">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
               <span>
-                <span style="display: block;line-height:1.1;">nidafathima@students</span>
-                <span style="display: block;line-height:1.1;">.iisertirupati.ac.in</span>
+                <img src="./icons/email.png" alt="email" class="icon-inline">
               </span>
-            </a>
-          </span>
-        </p>
+              <span>
+                <a href="mailto:nidafathima@students.iisertirupati.ac.in" style="display: flex; align-items: center; text-decoration: none; gap: 6px;" target="_blank">
+                  nidafathima@students.iisertirupati.ac.in
+                </a>
+              </span>
+        </div>
+			</div> <!-- tile -->
 
-        <!-- Skills -->
-        <h2>
-          <img src="icons/skills.png" alt="skills" class="icon-inline"> 
-          TECHNICAL SKILLS
-        </h2>
-        <ul style="list-style-type: circle; padding-left: 10px; margin-left: 10px;">
-          <li> 
-            <span style = "display:black;">
-              Molecular Biology Techniques: 
-            </span>
-            <span style = "display:black; font-size: 10px;">
-              PCR, Transcription, DNA/RNA purification, Gel Electrophoresis (Agarose, Native PAGE, Denaturing PAGE, SDS PAGE)
-            </span>
-          <li> 
-            <span style = "display:black;">
-              Nucleic Acid Analysis: 
-            </span>
-            <span style = "display:black; font-size: 10px;">
-              Aptamer design using NUPACK, Fluorescence analysis (Synergy H1 microplate reader), UV-Melting techniques
-            </span>
-          <li> 
-            <span style = "display:black;">
-              Spectroscopy & Particle Analysis: 
-            </span>
-            <span style = "display:black; font-size: 10px;">
-              Circular Dichroism (CD) Spectroscopy, Dynamic Light Scattering (DLS)
-            </span>
-          <li> 
-            <span style = "display:black;">
-              Oligonucleotide Synthesis: 
-            </span>
-            <span style = "display:black; font-size: 10px;">
-              DNA/RNA synthesis using K&A-H6/H8 DNA-RNA Synthesizer
-            </span>
-          <li> 
-            <span style = "display:black;">
-              Computational & Data Analysis: 
-            </span>
-            <span style = "display:black; font-size: 10px;">
-              Python programming, Data handling in Excel
-            </span>
-          <li> 
-            <span style = "display:black;">
-              Presentation & Communication: 
-            </span>
-            <span style = "display:black; font-size: 10px;">
-              Strong scientific writing and presentation skills
-            </span>
+
+      <!-- SECOND TILE IN THE LEFT COLUMN -->
+      <!-- TECHNICAL SKILLS -->
+			<div class="tile" >
+				<h3>
+          <img src="./icons/skills.png" alt="skills" class="icon-inline"> 
+          Technical Skills
+        </h3>
+        <ul class="keywords-head">
+        <!--p> <b> Molecular Biology Techniques: </b> </p-->
+        <li> Molecular Biology Techniques: </li>
+        <ul class="keywords">
+          <li> PCR </li>
+          <li> Transcription </li>
+          <li> Gel Electrophoresis (Agarose, Native PAGE, Denaturing PAGE, SDS PAGE) </li>
+          <li> DNA/RNA purification </li>
         </ul>
-
-        <!-- Inerests -->
-        <h2>
-          <img src="icons/achievements.png" alt="achi" class="icon-inline"> 
-          QUALIFICATIONS
-        </h2>
-        <ul style="list-style-type: circle; padding-left: 10px; margin-left: 10px;">
-          <li> GATE Qualified (2025)
+        <!--p> <b> Nucleic Acid Analysis: </b></p-->
+        <li> Nucleic Acid Analysis: </li>
+        <ul class="keywords">
+          <li> Aptamer design using NUPACK </li>
         </ul>
+        <li> Fluorescence analysis: </li>
+        <ul class="keywords">
+          <li> Synergy H1 microplate reader </li>
+        </ul>
+        <li> UV-Melting techniques </li>
+        <!--p> <b> Spectroscopy & Particle Analysis: </b></p-->
+        <li> Spectroscopy & Particle Analysis: </li>
+        <ul class="keywords">
+          <li>Circular Dichroism (CD) Spectroscopy </li>
+          <li> Dynamic Light Scattering (DLS) </li>
+        </ul>
+        <!--p><b>Computational & Data Analysis: </b></p-->
+        <li>Computational & Data Analysis: </li>
+        <ul class="keywords">
+           <li> Python programming </li>
+           <li> Data handling in Excel </li>
+        </ul>
+        <!--p><b> Presentation & Communication: </b></p-->       
+        <li> Presentation & Communication: </li>       
+        <ul class="keywords">
+           <li> Strong scientific reporting and presentation skills </li>
+        </ul>
+        </ul>
+			</div> <!-- tile -->
 
-        <!-- Inerests -->
-        <h2> 
-          <img src="icons/volunteering.png" alt="vol" class="icon-inline"> 
-          VOLUNTEERING
-        </h2>
-        <ul style="list-style-type: circle; padding-left: 10px; margin-left: 10px;">
+      <!-- THIRD TILE IN THE LEFT COLUMN -->
+      <!-- ACHI SKILLS -->
+			<div class="tile">
+				<h3>
+          <img src="./icons/achievements.png" alt="achi" class="icon-inline"> 
+          Achievements
+        </h3>
+        <ul class="keywords">
+           <li>
+                <a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" style="display: flex; align-items: center; justify-content: center; text-decoration: none; color:inherit" target="_blank">
+              GATE Qualified (2025)
+                </a>
+           </li>
+        </ul>
+      </div>
+
+
+      <!-- FOURTH TILE IN THE LEFT COLUMN -->
+      <!-- VOLUNTEERING -->
+			<div class="tile">
+				<h3>
+          <img src="./icons/volunteering.png" alt="volunt" class="icon-inline"> 
+          Volunteering
+        </h3>
+        <ul class="keywords">
           <li> 
-            <span style = "display: block"> 
               National Service Scheme 
-            </span>
-            <span style = "display: block"> 
-              (2018 to 2023)
-            </span>
+              (2018 - 2023)
           <li> 
-            <span style = "display: block"> 
               Bharat Scout & Guide  
-            </span>
-            <span style = "display: block"> 
-              (2010 to 2017)
-            </span>
+              (2010 - 2017)
         </ul>
+      </div>
 
-        <!-- Inerests -->
-        <h2>
-          <img src="icons/lang.png" alt="lang" class="icon-inline"> 
-          LANGUAGES
-        </h2>
-        <ul style="list-style-type: circle; padding-left: 10px; margin-left: 10px;">
+      <!-- FIFTH TILE IN THE LEFT COLUMN -->
+      <!-- LANGUAGES -->
+			<div class="tile">
+				<h3>
+          <img src="./icons/lang.png" alt="lang" class="icon-inline"> 
+          Languages
+        </h3>
+        <ul class="keywords">
           <li> English - Fluent 
           <li> Malayalam-Fluent
           <li> Hindi – Intermediate
           <li> Arabic - Intermediate
         </ul>
-
       </div>
-      <!-----------------  end of  LEFT SIDE COLUMN  ------------------------------------------>
+
+    <!-- end of LEFT CNTAINER -->
+		</div> <!-- left-contianer-->
 
 
-      <!-----------------  RIGHT SIDE COLUMN  ------------------------------------------------>
-      <div class="div2">
-        <h1> PROFILE </h1>
+  <!-----------RIGHT SIDE -->
+    <div class = "right-container">
+
+      <!-- FIRST TILE IN THE RIGHT COLUMN -->
+      <!-- ABOUT -->
+			<div class="tile" style = "padding-bottom:0.2em">
+        <h2> Profile </h2>
         <p style="margin-top: -5px;  text-align: justify; margin-left: 0px; margin-right: 0px;"> 
           Passionate researcher with experience at the intersection of chemistry and biology, with a growing interest in data analysis. Experienced in designing and characterizing RNA/DNA nanostructures for drug delivery and nanotechnology applications. Strong analytical, computational, and presentation skills, with expertise in Python programming and data handling.
         </p>
-        
-        <div style="height: 1px; background-color: #ccc; width: 100%; margin-top: 10px;"></div>
-
-        <!-- Job/research experiences  -->
-        <h1>
-          <!--img src="icons/job.png" alt="exper" class="icon-inline"--> 
-          RESEARCH EXPERIENCE 
-        </h1>
-
-        <div class="job">
-          <h2> MSc Thesis </h2>
-          <p> 
-            <span style = "color: #444; display: block; font-style: italic;">
-              <a href = "https://github.com/basilkottilingal/Nida-CV/MasterThesis.pdf" target="_blank">
-              "Engineering of Highly Stable RNA Nanomotifs for Nanotechnology Applications"
-              </a>
-            </span>
-            <span style = "display: block; text-align:right">
-            - Supervisor : Dr. Ashwani Sharma
-            </span>
-          </p>
-          <p> 
-            <span style = "display: block; text-align:light">
-              <img src="icons/calendar.png" alt="calendar" class="icon-inline">
-              June 2022 - May 2023 
-            </span>
-            <span style = "display: block; text-align:light">
-              <img src="icons/location.png" alt="calendar" class="icon-inline">
-              <a href="https://www.iisertirupati.ac.in/" target="_blank">IISER Tirupati</a>
-            </span>
-          </p>
-          <ul style="list-style-type: circle; padding-left: 10px; margin-left: 10px;">
-            <li> Designed a fluorescence-based method to compare the stability of different RNA three-way junctions (3WJs) used in RNA nanotechnology.
-            <li> Investigated the potential of RNA nanostructures in targeted drug delivery applications.
-          </ul>
-        </div>
-
-        <div class="job">
-          <h2> Semester Project </h2>
-          <p> 
-            <span style = "color: #444; display: block; font-style: italic;">
-              "Construction of Stimuli-Specific DNA Nanostructures Using i-Motif Sequences" 
-            </span>
-            <span style = "display: block; text-align:right">
-            - Supervisor : Dr. Ashwani Sharma
-            </span>
-          </p>
-          <p> 
-            <span style = "display: block; text-align:light">
-              <img src="icons/calendar.png" alt="calendar" class="icon-inline">
-              Jan 2022 - Apr 2022
-            </span>
-            <span style = "display: block; text-align:light">
-              <img src="icons/location.png" alt="calendar" class="icon-inline">
-              <a href="https://www.iisertirupati.ac.in/" target="_blank">IISER Tirupati</a>
-            </span>
-          </p>
-          <ul style="list-style-type: circle; padding-left: 10px; margin-left: 10px;">
-            <li> Designed pH-responsive DNA nanostructures such as triangles, squares, and tetrahedrons using i-motif sequences. 
-          </ul>
-        </div>
-
-          
-        <div style="height: 1px; background-color: #ccc; width: 100%; margin-top: 10px;"></div>
-
-        <!-- Education  -->
-        <h1>
-          <!--img src="icons/education.png" alt="exper" class="icon-inline"--> 
-          EDUCATION
-        </h1>
-        <div class="job">
-          <h2> Bachelor of Science - Master of Science </h2>
-          <p> 
-            <i>
-              Indian Institute of Science Education and Research (IISER), Tirupati
-            </i>
-          </p>
-          <p>
-            <img src="icons/calendar.png" alt="calendar" class="icon-inline">
-            2018 - 2023
-          </p>
-          <p>
-            <b> CGPA </b> : 7.0
-          </p>
-        </div>
-
-        
-        <!-- Contact Reference  -->
-        <h1>
-          <!--img src="icons/education.png" alt="exper" class="icon-inline"--> 
-          CONTACT REFERENCES
-        </h1>
-        <div class="job">
-          <h2> 
-            <a href = "https://www.iisertirupati.ac.in/faculty-details/?faculty_id=Bio-3&id=2124" target="_blank">Dr. Ashwani Sharma 
-            </a>
-          </h2>
-          <p> 
-            Assistant Professor, Department of Chemistry & Biology, IISER Tirupati
-            <a href="a.sharma@labs.iisertirupati.ac.in">a.sharma@labs.iisertirupati.ac.in</a>
-          </p>
-        </div>
-        <div class="job">
-          <h2> Dr. Ashwani Sharma </h2>
-          <p> 
-            <a href="a.sharma@labs.iisertirupati.ac.in">a.sharma@labs.iisertirupati.ac.in</a>
-          </p>
-        </div>
-
       </div>
-      <!-----------------  end of RIGHT SIDE COLUMN  ------------------------------------------>
 
 
-    </div>
-    <!----------------- end of CONTAINER FOR WHOLE PAGE --------------------------------------->
-        
-    <div style="height: 1px; background-color: #ccc; width: 100%; margin-top: 10px;"></div>
+	  <div class="tile" style = "padding-bottom:0.2em">
+      <h2> Research Experience </h2>
+			<div class="timeline-both">
+		    <div class="timeline-each">
+		      <div class="timeline-left">
+             <div class="timeline-line"></div>
+             <div class="timeline-circle"></div>
+		      </div>
+		      <div class="timeline-right">
+            <h3> MSc Thesis </h3>
+            <!-- TITLE -->
+            <p> 
+              <span style = "display: block; font-style: italic;">
+                <a href = "https://github.com/fathimanidaa/fathimanidaa.github.io/MasterThesis.pdf" style="display: flex; align-items: center;justify-content: center; text-decoration: none; color:inherit" target="_blank">
+                "Engineering of Highly Stable RNA Nanomotifs for Nanotechnology Applications"
+                </a>
+              </span>
+              <span style = "display: block; text-align:right">
+                - Supervisor : Dr. Ashwani Sharma
+              </span>
+            </p>
+            <!-- LOCATION -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/location.png" alt="home" class="icon-inline"> 
+              <a href="https://www.iisertirupati.ac.in/" style="display: flex; align-items: center;justify-content: center; text-decoration: none; color:inherit" target="_blank">
+                Indian Institute of Science Education and Research, Tirupati
+              </a>
+            </div>
+            <!-- DURING -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em; padding-top :0; padding-bottom:0;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/calendar.png" alt="calendar" class="icon-inline">
+              <p>  June 2022 - May 2023 
+              </p>
+            </div>
+            <!-- DEscription of project --> 
+            <p>
+              <span style = "display: block;">
+               - Designed a fluorescence-based method to compare the stability of different RNA three-way junctions (3WJs) used in RNA nanotechnology.
+              </span> 
+              <span style = "display: block;">
+               - Investigated the potential of RNA nanostructures in targeted drug delivery applications.
+              </span> 
+            </p>
+		      </div>
+		    </div>
+        <!-- NEXT EXPERIENCE -->
+		    <div class="timeline-each">
+		      <div class="timeline-left">
+             <div class="timeline-line"></div>
+             <div class="timeline-circle"></div>
+		      </div>
+		      <div class="timeline-right">
+            <h3> Semester Project </h3>
+            <!-- TITLE -->
+            <p> 
+              <span style = "display: block; font-style: italic;">
+                "Construction of Stimuli-Specific DNA Nanostructures Using i-Motif Sequences" 
+              </span>
+              <span style = "display: block; text-align:right">
+                - Supervisor : Dr. Ashwani Sharma
+              </span>
+            </p>
+            <!-- LOCATION -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/location.png" alt="home" class="icon-inline"> 
+              <a href="https://www.iisertirupati.ac.in/" style="display: flex; align-items: center;justify-content: center; text-decoration: none; color:inherit" target="_blank">
+                Indian Institute of Science Education and Research, Tirupati
+              </a>
+            </div>
+            <!-- DURING -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em; padding-top :0; padding-bottom:0;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/calendar.png" alt="calendar" class="icon-inline">
+              <p>
+                Jan 2022 - Apr 2022
+              </p>
+            </div>
+            <!-- DEscription of project --> 
+            <p>
+              - Designed pH-responsive DNA nanostructures such as triangles, squares, and tetrahedrons using i-motif sequences. 
+            </p>
+		      </div>
+		    </div>
+        <!-- End of experience block -->
+		  </div> <!--timeline-both-->
+		</div> <!--tile-->
+
+	  <div class="tile" style = "padding-bottom:0.2em">
+      <h2> Education </h2>
+			<div class="timeline-both">
+		    <div class="timeline-each">
+		      <div class="timeline-left">
+             <div class="timeline-line"></div>
+             <div class="timeline-circle"></div>
+		      </div>
+		      <div class="timeline-right">
+            <h3> BS-MS Chemistry</h3>
+            <!-- TITLE >
+            <p> Bachelor of Science and Master of Science
+                 Supervisor : Dr. Ashwani Sharma
+            </p-->
+            <!-- LOCATION -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/location.png" alt="home" class="icon-inline"> 
+              <a href="https://www.iisertirupati.ac.in/" style="display: flex; align-items: center;justify-content: center; text-decoration: none; color:inherit" target="_blank">
+                Indian Institute of Science Education and Research, Tirupati
+              </a>
+            </div>
+            <!-- DURING -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em; padding-top :0; padding-bottom:0;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/calendar.png" alt="calendar" class="icon-inline">
+              <p> 2018 - 2023
+              </p>
+            </div>
+            <!-- CGPA -->
+            <div class="tile-info" style="display: flex;align-items: center;gap: 0.5em; padding-top :0; padding-bottom:0;">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <img src="./icons/education.png" alt="cgpa" class="icon-inline">
+              <p> 7.0 CGPA
+              </p>
+            </div>
+		      </div>
+		    </div>
+        <!-- End of experience block -->
+		  </div> <!--timeline-both-->
+		</div> <!--tile-->
+
+	  <div class="tile" style = "padding-bottom:0.2em">
+      <h2> Contact Reference </h2>
+        <p>
+          <span style = "display: block;">
+            1. <a href = "https://www.iisertirupati.ac.in/faculty-details/?faculty_id=Bio-3&id=2124" style="text-decoration: none; color:inherit" target="_blank">
+                Dr. Ashwani Sharma,
+              </a>
+              Assistant Professor, Department of Chemistry and Biology,
+              <a href="https://www.iisertirupati.ac.in/faculty/" style="text-decoration: none; color:inherit" target="_blank">IISER Tirupati,</a>
+            <img src="./icons/email.png" alt="email" class="icon-inline">
+            <a href="mailto:a.sharma@labs.iisertirupati.ac.in">a.sharma@labs.iisertirupati.ac.in</a>
+          </span>
+          <span style = "display: block;">
+            2. Dr. Pankaj Kumar Koli,  
+              Assistant Professor, Department of Chemistry,
+              <a href="https://www.iisertirupati.ac.in/faculty/" style="text-decoration: none; color:inherit" target="_blank">IISER Tirupati,</a>
+            <img src="./icons/email.png" alt="email" class="icon-inline">
+            <a href="mailto:pankaj@labs.iisertirupati.ac.in">pankaj@labs.iisertirupati.ac.in</a>
+          </span>
+        </p>
+		  </div> <!--tile-->
+
+    </div> <!---End of right col-->
+
+  </div>
+  <div class="foot-container">
+    <!-- FIND ME -->       
+    <ul class="find-me">
+      <li>  
+        <a href="https://github.com/fathimanidaa.github.io/resume.pdf" style="display: flex; align-items: center;justify-content: center; text-decoration: none; color:inherit" target="_blank">
+         resume(pdf)
+        </a>
+      </li>
+      <li>  
+        <a href="https://www.linkedin.com/in/nida-fathima51?original_referer=" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+          linkedin
+        </a>
+      </li>
+      <li>  
+        <a href="https://github.com/fathimanidaa" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+          github
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
-    <div style="display: flex; justify-content: center; gap: 20px; align-items: center; padding: 10px;">
-
-
-  <a href="https://www.linkedin.com/in/nida-fathima51?original_referer=" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-    <img src="icons/linkedin.png" alt="LinkedIn" class="icon-inline">
-  </a>
-
-  <a href="https://github.com/fathimanidaa" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-    <img src="icons/github.png" alt="github" class="icon-inline">
-  </a>
-
-</div>
-
-
+  </div>
   </body>
-
-</html>

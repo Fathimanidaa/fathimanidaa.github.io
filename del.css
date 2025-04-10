@@ -1,0 +1,22 @@
+html, body {
+  color: #654321;
+}
+
+h1, h2, h3,
+small, .muted {
+  color: #654321;
+}
+
+hr {
+  border-color: #E5E7EB;
+}
+
+.container {
+  width: 100%;
+  background: #FFFDE7;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  padding: 0;
+  margin: 0;
+}
