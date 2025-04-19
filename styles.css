@@ -269,6 +269,6 @@ small, .muted {
 
 .find-me li:not(:first-child)::before {
   content: "|";
-  margin: 0 10em;
+  margin: 0 8em;
 }
 

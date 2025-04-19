@@ -1,11 +1,6 @@
-# Nida-CV
+# Nida Fathima
 
-Nida CV HTML.
+Nida Fathima [resume](https://fathimanidaa.github.io/).
 
-## To Do :
 
-  * Start
-  * Cleaner
-  * Better CSS
-  * github.io
 
